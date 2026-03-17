@@ -251,8 +251,13 @@
     "when": "terminalFocus"
   },
   {
+    "key": "shift+cmd+k",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
     "key": "cmd+l",
-    "command": "workbench.action.togglePanel",
+    "command": "workbench.action.togglePanel"
   },
   {
     "key": "cmd+n",
@@ -528,11 +533,6 @@
   {
     "key": "ctrl+cmd+left",
     "command": "-workbench.action.moveEditorToPreviousGroup"
-  },
-  {
-    "key": "cmd+r",
-    "command": "renameFile",
-    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   },
   {
     "key": "enter",
@@ -934,19 +934,17 @@
     "key": "cmd+k c",
     "command": "-workbench.files.action.compareWithClipboard"
   },
-  // Cursor
   {
-    "key": "ctrl+alt+cmd+i",
-    "command": "workbench.action.toggleAuxiliaryBar",
-    "when": "!isAuxiliaryWindowFocusedContext"
+    "key": "cmd+z",
+    "command": "-undo"
   },
   {
-    "key": "alt+cmd+b",
-    "command": "-workbench.action.toggleAuxiliaryBar",
-    "when": "!isAuxiliaryWindowFocusedContext"
+    "key": "cmd+r",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
   },
   {
-    "key": "cmd+i",
-    "command": "-composer.startComposerPrompt"
+    "key": "shift+cmd+r",
+    "command": "workbench.action.terminal.rename"
   }
 ]

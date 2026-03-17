@@ -61,6 +61,7 @@
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.fontFamily": "DejaVuSansM Nerd Font",
   "terminal.integrated.fontSize": 12,
+  "terminal.integrated.enablePersistentSessions": false,
 
   // Vue / TypeScript
   "vue.autoInsert.dotValue": true,
@@ -108,6 +109,7 @@
     "clsx",
     "iconify",
     "Kinde",
+    "lucide",
     "nuxi",
     "nuxt",
     "nuxtjs",
