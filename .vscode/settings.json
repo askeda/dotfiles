@@ -3,13 +3,11 @@
   "workbench.colorTheme": "Catppuccin Mocha",
   "workbench.iconTheme": "symbols",
   "workbench.list.smoothScrolling": true,
-  "workbench.fontAliasing": "antialiased",
-  "workbench.tree.expandMode": "singleClick",
   "workbench.layoutControl.enabled": false,
-  "workbench.startupEditor": "none",
   "workbench.sideBar.location": "right",
   "workbench.statusBar.visible": false,
   "workbench.activityBar.location": "hidden",
+  "workbench.fontAliasing": "antialiased",
 
   // Editor
   "editor.fontFamily": "DejaVuSansM Nerd Font",  
@@ -21,51 +19,36 @@
     "source.organizeImports": "never",
     "source.removeUnusedImports": "always"
   },
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.tabSize": 2,
-  "editor.find.addExtraSpaceOnTop": true,
-  "editor.stickyScroll.enabled": false,
-  "editor.suggestSelection": "first",
-  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
+  "editor.lineNumbers": "relative",
+  "editor.lightbulb.enabled": "off",
+  "editor.accessibilitySupport": "off",
   "editor.scrollbar.vertical": "hidden",
   "editor.scrollbar.horizontal": "hidden",
-  "diffEditor.ignoreTrimWhitespace": false,
-  "editor.gotoLocation.multipleDefinitions": "goto",
-  "editor.lightbulb.enabled": "off",
-  "editor.guides.indentation": true,
   "editor.occurrencesHighlight": "off",
   "editor.selectionHighlight": false,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.stickyScroll.enabled": false,
+  "editor.gotoLocation.multipleDefinitions": "goto",
+  "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
 
   // Window
-  "window.titleBarStyle": "custom",
+  "window.title": " ",
   "window.dialogStyle": "custom",
-  "window.title": "🥷",
   "window.zoomLevel": 2, 
-  "window.nativeTabs": false,
   "window.commandCenter": false,
   
   // Explorer
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "explorer.compactFolders": false,
   "explorer.decorations.badges": false,
   "files.autoSave": "onFocusChange", 
 
   // Terminal
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.fontWeight": "300",
-  "terminal.integrated.tabs.enabled": true,
-  "terminal.integrated.fontFamily": "DejaVuSansM Nerd Font",
-  "terminal.integrated.fontSize": 12,
   "terminal.integrated.enablePersistentSessions": false,
-
-  // Vue / TypeScript
-  "vue.autoInsert.dotValue": true,
-  "vue.autoInsert.bracketSpacing": true,
 
   // Vim
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -80,18 +63,7 @@
   ],
   "vim.useSystemClipboard": true,
 
-  // Error lens extension config 
-  "errorLens.enabledDiagnosticLevels": [
-    "warning",
-    "error"
-  ],
-  "errorLens.excludeBySource": [
-    "cSpell",
-    "Grammarly",
-    "eslint"
-  ],
-
-  // ESLint extension settings 
+  // ESLint extension settings
   "eslint.validate": [
     "javascript",
     "typescript",
@@ -103,60 +75,33 @@
     "yaml",
   ],
 
-  // code-spell-checker extension settings
+  // cSpell extension settings
   "cSpell.userWords": [
     "antfu",
-    "clsx",
     "iconify",
-    "Kinde",
     "lucide",
     "nuxi",
     "nuxt",
-    "nuxtjs",
-    "pinia",
-    "primevue",
-    "shadcn",
-    "tsup",
     "unplugin",
-    "vercel",
     "vueuse"
   ],
   "cSpell.allowCompoundWords": true,
   "cSpell.language": "en-US",
 
+  // Vue / TypeScript
+  "vue.autoInsert.dotValue": true,
+  "vue.autoInsert.bracketSpacing": true,
+  "js/ts.updateImportsOnFileMove.enabled": "never",
+  "js/ts.format.semicolons": "remove",
+
+  "git.decorations.enabled": false,
+  "git.confirmSync": false,
+  "scm.diffDecorations": "none",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+
   "search.exclude": {
-    "**/.git": true,
-    "**/.github": true,
-    "**/.nuxt": true,
-    "**/.output": true,
-    "**/.pnpm": true,
-    "**/.vscode": true,
-    "**/.yarn": true,
-    "**/bower_components": true,
-    "**/dist/**": true,
-    "**/logs": true,
-    "**/node_modules": true,
-    "**/out/**": true,
-    "**/package-lock.json": true,
     "**/pnpm-lock.yaml": true,
-    "**/tmp": true,
-    "**/yarn.lock": true
   },
 
-  "github.copilot.editor.enableAutoCompletions": true,
-  "tailwind-fold.autoFold": false,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
   "extensions.ignoreRecommendations": true,
-  "typescript.updateImportsOnFileMove.enabled": "never",
-  "javascript.updateImportsOnFileMove.enabled": "never",
-  "git.decorations.enabled": false,
-  "scm.diffDecorations": "none",
-  "typescript.format.semicolons": "remove",
-  "javascript.format.semicolons": "remove",
-  "git.confirmSync": false,
 }
