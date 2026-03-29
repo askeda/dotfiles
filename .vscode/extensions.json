@@ -1,30 +1,17 @@
 {
   "recommendations": [
-    // Theme
     "Catppuccin.catppuccin-vsc",
     "miguelsolorio.symbols",
     "antfu.iconify",
-
-    // Git
     "eamodio.gitlens",
     "mhutchie.git-graph",
-
-    // Tools
     "streetsidesoftware.code-spell-checker",
     "dbaeumer.vscode-eslint",
-
-    // Editor helpers
     "YoavBls.pretty-ts-errors",
     "bradlc.vscode-tailwindcss",
-    "stivo.tailwind-fold",
-    "usernamehw.errorlens",
     "sdras.vue-vscode-snippets",
-    "antfu.goto-alias",
-    "formulahendry.auto-rename-tag",
     "naumovs.color-highlight",
     "wayou.vscode-todo-highlight",
-
-    // Other
     "vscodevim.vim",
     "Vue.volar",
   ]
