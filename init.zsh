@@ -5,18 +5,8 @@ source ~/.zshrc
 # [pnpm]
 brew install pnpm
 
-# [nvm]
-brew install nvm
-mkdir -p ~/.nvm
-cat << 'EOF' >> ~/.zshrc
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-EOF
-source ~/.zshrc
-
 # [node]
-nvm install node
+brew install node
 
 # [font]
 brew install --cask font-dejavu-sans-mono-nerd-font
@@ -50,7 +40,6 @@ brew install --cask karabiner-elements
 # --- Desktop Applications ---
 brew install --cask figma
 brew install --cask postman
-brew install --cask slack
 brew install --cask spotify
 brew install --cask brave-browser
 brew install --cask obsidian
