@@ -116,7 +116,7 @@
 
   "extensions.ignoreRecommendations": true,
 
-  "files.watcherExclude": {
+ "files.watcherExclude": {
     "**/.nuxt/**": true,
     "**/node_modules/**": true,
   }
