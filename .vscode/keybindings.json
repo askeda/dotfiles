@@ -1,7 +1,8 @@
 [
   {
     "key": "ctrl+alt+cmd+=",
-    "command": "workbench.action.splitEditor"
+    "command": "workbench.action.splitEditor",
+    "when": "editorFocus"
   },
   {
     "key": "cmd+\\",
@@ -178,9 +179,9 @@
     "command": "-workbench.action.replaceInFiles"
   },
   {
-    "key": "cmd+\\",
-    "command": "-workbench.action.terminal.splitInstance",
-    "when": "terminalProcessSupported && terminalTabsFocus"
+    "key": "ctrl+alt+cmd+=",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus"
   },
   {
     "key": "shift+cmd+d",
@@ -250,9 +251,19 @@
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
   },
-  {
+    {
     "key": "shift+cmd+k",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+h",
     "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "shift+cmd+l",
+    "command": "workbench.action.terminal.focusNextPane",
     "when": "terminalFocus"
   },
   {
@@ -404,7 +415,8 @@
   },
   {
     "key": "shift+cmd+h",
-    "command": "workbench.action.previousEditor"
+    "command": "workbench.action.previousEditor",
+    "when": "editorFocus"
   },
   {
     "key": "shift+cmd+[",
@@ -422,7 +434,8 @@
   },
   {
     "key": "shift+cmd+l",
-    "command": "workbench.action.nextEditor"
+    "command": "workbench.action.nextEditor",
+    "when": "editorFocus"
   },
   {
     "key": "shift+cmd+]",
@@ -437,7 +450,7 @@
     "command": "-workbench.action.files.revealActiveFileInWindows"
   },
   {
-    "key": "cmd+k r",
+    "key": "cmd+k f",
     "command": "revealFileInOS",
     "when": "!editorFocus"
   },
@@ -944,7 +957,12 @@
     "when": "terminalFocus && terminalProcessSupported || terminalFocus && terminalWebExtensionContributedProfile"
   },
   {
-    "key": "shift+cmd+r",
+    "key": "cmd+k r",
     "command": "workbench.action.terminal.rename"
+  },
+  {
+    "key": "cmd+k f",
+    "command": "-workbench.action.closeFolder",
+    "when": "emptyWorkspaceSupport && workbenchState != 'empty'"
   }
 ]
