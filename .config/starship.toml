@@ -1,9 +1,7 @@
 palette = "catppuccin_mocha"
 
 format = """
-[](mauve)\
-$username\
-[](bg:sapphire fg:mauve)\
+[](sapphire)\
 $directory\
 [](fg:sapphire bg:maroon)\
 $git_branch\
@@ -11,18 +9,11 @@ $git_status\
 [ ](fg:maroon)\
 """
  
-[username]
-show_always = true
-style_user = "bg:mauve"
-style_root = "bg:mauve"
-format = '[$user ]($style)'
-disabled = false
- 
 [directory]
 style = "bg:sapphire"
 format = "[ $path ]($style)"
-truncation_length = 3
-truncation_symbol = "…/"
+truncation_length = 1
+truncation_symbol = " "
  
 [git_branch]
 symbol = ""
