@@ -1,0 +1,3 @@
+set relativenumber
+highlight LineNr ctermfg=183 guifg=#cba6f7
+highlight CursorLineNr ctermfg=183 guifg=#cba6f7

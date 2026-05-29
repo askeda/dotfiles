@@ -1,11 +1,12 @@
 #### contents
 
 - Shell: zsh
-- Terminal: kitty 
+- Terminal: kitty + tmux
 - Launcher: raycast
 - Font: DejaVu
 - Shell prompt: starship
-- Package Manager: homebrew
+- Package manager: homebrew
 - Browser: Brave
 - Code editor: VS Code
 - Notes: Obsidian
+- AI Workflow: Wispr Flow, Claude Code
