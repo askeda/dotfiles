@@ -4,27 +4,35 @@ unset LAST_LOGIN
 
 # NVM Configuration
 export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+nvm() { unfunction nvm && source /opt/homebrew/opt/nvm/nvm.sh && nvm "$@" }
 
-# general aliases
+# ─────────────────────────────────────────────────────
+# ── aliases ──────────────────────────────────────────
+
+# general
 alias c="clear"
+alias ll="ls -la"
+
+# navigation
 alias ..="cd .."
 alias ...="cd ../.."
-alias ll="ls -la"
+alias p="cd $HOME/Desktop/projects"
 alias mindnest="cd $HOME/Desktop/projects/mindnest"
 
 # pnpm
 alias pi="pnpm install"
+alias po="pnpm outdated"
 alias dev="pnpm dev"
 
-# git aliases
+# git
 alias gs="git status"
 alias ga="git add ."
 alias gc="git commit -m"
 alias gl="git log --oneline --graph --decorate"
 
-# utils
+# ─────────────────────────────────────────────────────
+# ── utils ──────────────────────────────────────────
+
 killport() {
   lsof -ti tcp:$1 | xargs kill -9
 }

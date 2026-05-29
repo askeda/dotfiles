@@ -1,6 +1,6 @@
 # [homebrew]
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-source ~/.zshrc
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # [pnpm]
 brew install pnpm
@@ -22,6 +22,14 @@ mkdir -p ~/.config/kitty
 cp ./.config/kitty/kitty.conf ~/.config/kitty/kitty.conf
 cp ./.config/kitty/current-theme.conf ~/.config/kitty/current-theme.conf
 
+# [tmux]
+brew install tmux
+brew install tpm
+cp ./.config/tmux.conf ~/.tmux.conf
+
+# [vim]
+cp ./.config/vimrc ~/.vimrc
+
 # [vscode]
 brew install --cask visual-studio-code
 mkdir -p "$HOME/Library/Application Support/Code/User"
@@ -37,7 +45,11 @@ brew install --cask docker
 # [karabiner-elements]
 brew install --cask karabiner-elements
 
-# --- Desktop Applications ---
+# [ai]
+brew install --cask wispr-flow
+brew install claude code
+
+# [apps]
 brew install --cask figma
 brew install --cask postman
 brew install --cask spotify
