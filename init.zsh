@@ -55,3 +55,4 @@ brew install --cask postman
 brew install --cask spotify
 brew install --cask brave-browser
 brew install --cask obsidian
+brew install --cask shottr
