@@ -267,10 +267,6 @@
     "when": "terminalFocus"
   },
   {
-    "key": "cmd+l",
-    "command": "workbench.action.togglePanel"
-  },
-  {
     "key": "cmd+n",
     "command": "workbench.action.terminal.new",
     "when": "terminalFocus"

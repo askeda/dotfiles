@@ -34,6 +34,7 @@
   "editor.stickyScroll.enabled": false,
   "editor.gotoLocation.multipleDefinitions": "goto",
   "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?",
+  "editor.linkedEditing": true,
 
   // Breadcrumbs
   "breadcrumbs.symbolPath": "off",
@@ -49,11 +50,6 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.decorations.badges": false,
   "files.autoSave": "onFocusChange", 
-
-  // Terminal
-  "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.fontWeight": "300",
-  "terminal.integrated.enablePersistentSessions": false,
 
   // Source Control panel
   "scm.diffDecorations": "none",
@@ -116,8 +112,9 @@
 
   "extensions.ignoreRecommendations": true,
 
- "files.watcherExclude": {
+  "files.watcherExclude": {
     "**/.nuxt/**": true,
     "**/node_modules/**": true,
-  }
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
 }
