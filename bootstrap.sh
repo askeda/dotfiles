@@ -11,24 +11,27 @@ brew install node
 # [font]
 brew install --cask font-dejavu-sans-mono-nerd-font
 
+# [zsh]
+cp ./terminal/.zshrc ~/.zshrc
+
 # [starship]
 brew install starship
 mkdir -p ~/.config
-cp ./.config/starship.toml ~/.config/starship.toml
+cp ./terminal/starship.toml ~/.config/starship.toml
 
 # [kitty]
 brew install kitty
 mkdir -p ~/.config/kitty
-cp ./.config/kitty/kitty.conf ~/.config/kitty/kitty.conf
-cp ./.config/kitty/current-theme.conf ~/.config/kitty/current-theme.conf
+cp ./terminal/kitty/kitty.conf ~/.config/kitty/kitty.conf
+cp ./terminal/kitty/current-theme.conf ~/.config/kitty/current-theme.conf
 
 # [tmux]
 brew install tmux
 brew install tpm
-cp ./.config/tmux.conf ~/.tmux.conf
+cp ./terminal/tmux.conf ~/.tmux.conf
 
 # [vim]
-cp ./.config/vimrc ~/.vimrc
+cp ./terminal/vimrc ~/.vimrc
 
 # [vscode]
 brew install --cask visual-studio-code
@@ -47,7 +50,7 @@ brew install --cask karabiner-elements
 
 # [ai]
 brew install --cask wispr-flow
-brew install claude code
+brew install --cask claude-code
 
 # [apps]
 brew install --cask figma
