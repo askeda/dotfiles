@@ -50,7 +50,7 @@ brew install --cask karabiner-elements
 
 # [ai]
 brew install --cask wispr-flow
-brew install --cask claude-code
+brew install --cask claude-code@latest
 
 # [apps]
 brew install --cask figma
