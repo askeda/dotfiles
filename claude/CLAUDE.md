@@ -1,0 +1,5 @@
+- Never add comments to generated code.
+- Do not run eslint or typecheck unless explicitly asked
+- In all interactions and plans be extremely concise and sacrifice grammar for the sake of concision.
+- Always make plans multi-phase
+- TypeScript Type Safety: never use any, unknown, or unsafe as casts. Rely on type inference, proper types, generics, or zod schema inference.
