@@ -117,4 +117,5 @@
     "**/node_modules/**": true,
   },
   "diffEditor.ignoreTrimWhitespace": false,
+  "chat.disableAIFeatures": true,
 }
