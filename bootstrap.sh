@@ -42,6 +42,11 @@ cp ./.vscode/keybindings.json "$HOME/Library/Application Support/Code/User/keybi
 # [macos]
 bash ./macos/defaults.sh
 
+# [wallpaper]
+brew install wallpaper
+cp ./wallpapers/default.png ~/Pictures/default.png
+wallpaper set ~/Pictures/default.png
+
 # [raycast]
 brew install --cask raycast
 
