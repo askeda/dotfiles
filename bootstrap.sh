@@ -39,6 +39,9 @@ mkdir -p "$HOME/Library/Application Support/Code/User"
 cp ./.vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 cp ./.vscode/keybindings.json "$HOME/Library/Application Support/Code/User/keybindings.json"
 
+# [macos]
+bash ./macos/defaults.sh
+
 # [raycast]
 brew install --cask raycast
 
