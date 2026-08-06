@@ -20,15 +20,16 @@ mkdir -p ~/.config
 cp ./terminal/starship.toml ~/.config/starship.toml
 
 # [kitty]
-brew install kitty
+brew install --cask kitty
 mkdir -p ~/.config/kitty
 cp ./terminal/kitty/kitty.conf ~/.config/kitty/kitty.conf
 cp ./terminal/kitty/current-theme.conf ~/.config/kitty/current-theme.conf
 
 # [tmux]
 brew install tmux
-brew install tpm
+[ -d ~/.tmux/plugins/tpm ] || git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 cp ./terminal/tmux.conf ~/.tmux.conf
+~/.tmux/plugins/tpm/bin/install_plugins
 
 # [vim]
 cp ./terminal/vimrc ~/.vimrc
@@ -51,7 +52,7 @@ wallpaper set ~/Pictures/default.png
 brew install --cask raycast
 
 # [docker]
-brew install --cask docker
+brew install --cask docker-desktop
 
 # [karabiner-elements]
 brew install --cask karabiner-elements
@@ -68,3 +69,6 @@ brew install --cask spotify
 brew install --cask brave-browser
 brew install --cask obsidian
 brew install --cask shottr
+
+# [git]
+brew install gh
