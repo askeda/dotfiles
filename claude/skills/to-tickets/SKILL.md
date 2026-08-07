@@ -1,6 +1,6 @@
 ---
 name: to-tickets
-description: Break a spec into tracer-bullet vertical-slice tickets with blocking edges and publish them as GitHub issues on the repo's project board. Use when the user asks to turn a spec into tickets/issues, slice work into tickets, or plan a feature into a board.
+description: Break a spec into tracer-bullet vertical-slice tickets with blocking edges, publish them as GitHub issues on the repo's project board, and link them back into the spec. Use when the user asks to turn a spec into tickets/issues, slice work into tickets, or plan a feature into a board.
 ---
 
 # to-tickets
@@ -75,6 +75,36 @@ Board fields apply to whatever sits on the board — the single-slice ticket, or
 - Set the size field based on blast radius. For a parent, size the whole feature.
 
 Do NOT set priority. Do NOT apply labels. The user sets those by hand when promoting a ticket out of the starting column. Board field writes require `gh` with the `project` scope.
+
+## 7. Link the tickets back into the spec
+
+Once the issues exist, write them into the spec resolved in step 1 so the spec points at the work it produced.
+
+Append a `## Tickets` section as the **last** section of the spec. If the spec already has one — a re-run, or slices added later — rewrite that section in place instead of appending a second one. Leave every other section untouched.
+
+Use full issue URLs. GitHub autolinks bare `#N` inside issue and PR bodies, but **not** inside repository markdown files, so `#N` alone would render as plain text here.
+
+**Multiple slices** — parent first, then children in dependency order:
+
+```markdown
+## Tickets
+
+Parent: [#70 Crypto tab](https://github.com/<owner>/<repo>/issues/70)
+
+- [#71 Schema and read path](https://github.com/<owner>/<repo>/issues/71)
+- [#72 Tab state in the URL](https://github.com/<owner>/<repo>/issues/72)
+- [#73 Chart panel](https://github.com/<owner>/<repo>/issues/73)
+```
+
+**Single slice** — one line, no parent/child distinction:
+
+```markdown
+## Tickets
+
+[#70 Crypto tab](https://github.com/<owner>/<repo>/issues/70)
+```
+
+Report the spec path you edited when the run ends. Do not touch any file other than the spec.
 
 ## Ticket body template
 
