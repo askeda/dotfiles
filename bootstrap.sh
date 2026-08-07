@@ -12,6 +12,7 @@ brew install node
 brew install --cask font-dejavu-sans-mono-nerd-font
 
 # [zsh]
+brew install zsh-autosuggestions
 cp ./terminal/.zshrc ~/.zshrc
 
 # [starship]
