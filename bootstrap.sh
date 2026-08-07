@@ -70,5 +70,27 @@ brew install --cask brave-browser
 brew install --cask obsidian
 brew install --cask shottr
 
-# [git]
+# [git & ssh]
 brew install gh
+read -rp "git user.name: " GIT_NAME
+read -rp "git user.email: " GIT_EMAIL
+git config --global user.name "$GIT_NAME"
+git config --global user.email "$GIT_EMAIL"
+
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+ssh-keygen -t ed25519 -C "$GIT_EMAIL" -f ~/.ssh/id_ed25519
+cat >> ~/.ssh/config <<'EOF'
+Host github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
+EOF
+chmod 600 ~/.ssh/config
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+
+gh auth login --git-protocol ssh --web
+
+git config --global --list
+ssh -T git@github.com || true
+gh auth status
