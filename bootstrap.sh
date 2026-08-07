@@ -45,8 +45,8 @@ bash ./macos/defaults.sh
 
 # [wallpaper]
 brew install wallpaper
-cp ./wallpapers/default.png ~/Pictures/default.png
-wallpaper set ~/Pictures/default.png
+cp ./wallpapers/default.jpg ~/Pictures/default.jpg
+wallpaper set ~/Pictures/default.jpg
 
 # [raycast]
 brew install --cask raycast
