@@ -39,6 +39,7 @@ brew install --cask visual-studio-code
 mkdir -p "$HOME/Library/Application Support/Code/User"
 cp ./.vscode/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 cp ./.vscode/keybindings.json "$HOME/Library/Application Support/Code/User/keybindings.json"
+jq -r '.recommendations[]' ./.vscode/extensions.json | xargs -n1 code --install-extension
 
 # [macos]
 bash ./macos/defaults.sh
