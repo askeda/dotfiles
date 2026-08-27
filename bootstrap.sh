@@ -64,6 +64,11 @@ brew install --cask claude-code
 mkdir -p ~/.claude
 cp ./claude/CLAUDE.md ~/.claude/CLAUDE.md
 
+# [claude code]
+mkdir -p ~/.claude/skills ~/.claude/commands
+cp -R ./claude/skills/. ~/.claude/skills/
+cp -R ./claude/commands/. ~/.claude/commands/
+
 # [apps]
 brew install --cask figma
 brew install --cask postman
