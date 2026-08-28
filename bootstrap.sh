@@ -68,6 +68,7 @@ cp ./claude/CLAUDE.md ~/.claude/CLAUDE.md
 mkdir -p ~/.claude/skills ~/.claude/commands
 cp -R ./claude/skills/. ~/.claude/skills/
 cp -R ./claude/commands/. ~/.claude/commands/
+cp ./claude/settings.json ~/.claude/settings.json
 
 # [apps]
 brew install --cask figma
