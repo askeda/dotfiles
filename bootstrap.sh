@@ -78,6 +78,11 @@ brew install --cask brave-browser
 brew install --cask obsidian
 brew install --cask shottr
 
+# [LaunchAgents]
+mkdir -p ~/obsidian-widgets ~/Library/LaunchAgents
+sed "s|__HOME__|$HOME|g" ./macos/launchagents/local.obsidian-widgets.httpserver.plist > ~/Library/LaunchAgents/local.obsidian-widgets.httpserver.plist
+launchctl bootstrap gui/"$(id -u)" ~/Library/LaunchAgents/local.obsidian-widgets.httpserver.plist
+
 # [git & ssh]
 brew install gh
 read -rp "git user.name: " GIT_NAME
