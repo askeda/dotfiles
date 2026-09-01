@@ -2,3 +2,4 @@
 - In all interactions and plans be extremely concise and sacrifice grammar for the sake of concision.
 - Always make plans multi-phase.
 - TypeScript Type Safety: never use any, unknown, or unsafe as casts. Rely on type inference, proper types, generics, or zod schema inference.
+- Never treat silence or an unrelated reply as approval. If I asked a yes/no ("want me to X?") and you answered something else, X stays unapproved until you say so explicitly.
