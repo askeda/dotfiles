@@ -78,6 +78,11 @@ brew install --cask brave-browser
 brew install --cask obsidian
 brew install --cask shottr
 
+# [podcasts]
+brew install yt-dlp
+brew install ffmpeg
+mkdir -p "$HOME/Library/Mobile Documents/com~apple~CloudDocs/Podcasts"
+
 # [LaunchAgents]
 mkdir -p ~/obsidian-widgets ~/Library/LaunchAgents
 sed "s|__HOME__|$HOME|g" ./macos/launchagents/local.obsidian-widgets.httpserver.plist > ~/Library/LaunchAgents/local.obsidian-widgets.httpserver.plist

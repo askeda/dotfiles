@@ -29,12 +29,19 @@ alias gl="git log --oneline --graph --decorate"
 # ─────────────────────────────────────────────────────
 # ── utils ──────────────────────────────────────────
 
+# kill process on given port
 killport() {
   lsof -ti tcp:$1 | xargs kill -9
 }
 
+# list files after cd
 chpwd() {
   ls
+}
+
+# save youtube audio to icloud podcasts
+yt() {
+  yt-dlp -f "bestaudio[ext=m4a]" -P "$HOME/Library/Mobile Documents/com~apple~CloudDocs/Podcasts" "${1%%&*}"
 }
 
 eval "$(starship init zsh)"
