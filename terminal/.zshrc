@@ -44,6 +44,8 @@ yt() {
   yt-dlp -f "bestaudio[ext=m4a]" -P "$HOME/Library/Mobile Documents/com~apple~CloudDocs/Podcasts" "${1%%&*}"
 }
 
+export PATH="$HOME/.t3/bin:$PATH"
+
 eval "$(starship init zsh)"
 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh

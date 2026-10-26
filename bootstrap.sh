@@ -70,6 +70,13 @@ cp -R ./claude/skills/. ~/.claude/skills/
 cp -R ./claude/commands/. ~/.claude/commands/
 cp ./claude/settings.json ~/.claude/settings.json
 
+# [t3 code]
+brew install --cask t3-code@nightly
+mkdir -p ~/.t3/userdata
+cp ./t3code/settings.json ~/.t3/userdata/settings.json
+cp ./t3code/client-settings.json ~/.t3/userdata/client-settings.json
+cp ./t3code/keybindings.json ~/.t3/userdata/keybindings.json
+
 # [apps]
 brew install --cask figma
 brew install --cask postman
