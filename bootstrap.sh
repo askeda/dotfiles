@@ -60,7 +60,7 @@ brew install --cask docker-desktop
 brew install --cask karabiner-elements
 
 # [ai]
-brew install --cask claude-code
+brew install --cask claude-code@latest
 mkdir -p ~/.claude
 cp ./claude/CLAUDE.md ~/.claude/CLAUDE.md
 
