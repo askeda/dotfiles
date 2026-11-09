@@ -59,12 +59,10 @@ brew install --cask docker-desktop
 # [karabiner-elements]
 brew install --cask karabiner-elements
 
-# [ai]
+# [claude code]
 brew install --cask claude-code@latest
 mkdir -p ~/.claude
 cp ./claude/CLAUDE.md ~/.claude/CLAUDE.md
-
-# [claude code]
 mkdir -p ~/.claude/skills ~/.claude/commands
 cp -R ./claude/skills/. ~/.claude/skills/
 cp -R ./claude/commands/. ~/.claude/commands/
