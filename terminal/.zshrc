@@ -12,8 +12,8 @@ alias ll="ls -la"
 # navigation
 alias ..="cd .."
 alias ...="cd ../.."
-alias p="cd $HOME/Desktop/projects"
-alias mindnest="cd $HOME/Desktop/projects/mindnest"
+alias p="cd $HOME/Documents/projects"
+alias mindnest="cd $HOME/Documents/projects/mindnest"
 
 # pnpm
 alias pi="pnpm install"
