@@ -10,18 +10,18 @@ $git_status\
 """
  
 [directory]
-style = "bg:sapphire"
+style = "bg:sapphire fg:#e0e8f9"
 format = "[ $path ]($style)"
 truncation_length = 1
 truncation_symbol = " "
  
 [git_branch]
 symbol = ""
-style = "bg:maroon"
+style = "bg:maroon fg:#e0e8f9"
 format = '[ $symbol $branch ]($style)'
  
 [git_status]
-style = "bg:maroon"
+style = "bg:maroon fg:#e0e8f9"
 format = '[$all_status$ahead_behind ]($style)'
 
 [palettes.catppuccin_mocha]
