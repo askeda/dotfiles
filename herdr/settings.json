@@ -1,0 +1,15 @@
+{
+  "zoom": 1.15,
+  "sounds": {
+    "enabled": false
+  },
+  "font": "DejaVuSansM Nerd Font",
+  "font_size": 14.0,
+  "font_ligatures": false,
+  "ui_font": "DejaVuSansM Nerd Font",
+  "telemetry": false,
+  "minimum_contrast": 1.0,
+  "option_as_alt": "off",
+  "appearance": "dark",
+  "theme": "tokyo-catppuccin-hybrid"
+}
