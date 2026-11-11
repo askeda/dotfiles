@@ -70,6 +70,7 @@ cp ./claude/settings.json ~/.claude/settings.json
 
 # [herdr]
 brew install --cask herdr-app
+curl -fsSL https://releases.herdr.dev/core/install.sh | sh
 command -v jq >/dev/null || brew install jq
 mkdir -p ~/.config/herdr-app
 cp -R ./herdr/. ~/.config/herdr-app/
