@@ -68,6 +68,12 @@ cp -R ./claude/skills/. ~/.claude/skills/
 cp -R ./claude/commands/. ~/.claude/commands/
 cp ./claude/settings.json ~/.claude/settings.json
 
+# [herdr]
+brew install --cask herdr-app
+command -v jq >/dev/null || brew install jq
+mkdir -p ~/.config/herdr-app
+cp -R ./herdr/. ~/.config/herdr-app/
+
 # [apps]
 brew install --cask figma
 brew install --cask postman
